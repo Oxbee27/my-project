@@ -7,45 +7,31 @@
 <body>
 
     <script>
-let name = ["Oxbee", "Moses", "Tersoo", "Kenzy", "Desmond"]
-//  first method  to call for full name ( thinking outside the boxx)
-console.log(name[5-5])
-console.log(name[5-4])
-console.log(name[5-3])
-console.log(name[5-2])
-console.log(name[5-1])
+let firstName = prompt("Enter firstName");
+let lastName =prompt("Enter lastName");
 
-// second method to call for full name
+let fullName = `${firstName[0]}.${lastName[0]}`;
 
-console.log(name[0]);
-console.log(name[1]);
-
-// the third method 
-
-console.log(name.slice(0)); 
-
-// Initials Generator
-
-let fullName = "Oxbee Moses Tersoo Kenzy Desmond";
-
-let initials = fullName
-    .split(/\s+/)
-    .map(word => word[0].toUpperCase())
-    .join("");
-
-console.log("Initials:", initials);
+console.log(fullName)
 
 
 // QUESTION TWO
-let sentence = prompt( "Hello, world");
-let leeter = prompt("w");
-let position = [6];
+let sentence = prompt("Enter sentence");
+let letter = sentence.indexOf(prompt("Enter a letter"));
+console.log(letter)
+
 
 // question three
 
-let firstName = prompt("Oxbee")
-let lastName = prompt("Moses")
+ let firstName1 = prompt("Enter firstName")
+let lastName2 = prompt("Enter lastName")
+ let total = firstName1 + lastName2;
+ let length = total.length;
 
+
+ let username =`${firstName1}${lastName2}_${length} `;
+
+ console.log(username)
 
 </script>
     <script src="style.js"></script>
