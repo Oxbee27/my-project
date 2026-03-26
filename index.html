@@ -17,8 +17,23 @@ console.log(name[5-1])
 
 // second method to call for full name
 
-console.log(name[0])
-console.log(name[1])
+console.log(name[0]);
+console.log(name[1]);
+
+// the third method 
+
+console.log(name.slice(0)); 
+
+// Initials Generator
+
+let fullName = "Oxbee Moses Tersoo Kenzy Desmond";
+
+let initials = fullName
+    .split(/\s+/)
+    .map(word => word[0].toUpperCase())
+    .join("");
+
+console.log("Initials:", initials);
 
 
 // QUESTION TWO
